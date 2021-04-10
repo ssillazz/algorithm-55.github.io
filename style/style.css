@@ -56,7 +56,7 @@ header > p:first-of-type{
 #inputs > input,
 #inputs > button{
     padding: 15px;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 #outputs{
