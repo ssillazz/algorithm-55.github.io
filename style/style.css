@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+#wrapper{
+    max-width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
+header{
+width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 1.5rem 0;
+   flex-direction: column;
+}
+
+header > h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+header > p{
+    padding: 10px 0;
+    font-size: 18px;
+    line-height: 1.5rem;
+}
+
+header > p:first-of-type{
+    font-weight: 700;
+}
+
+
+#content{
+    width: 100%;
+}
+
+#inputs{
+    width: 100%;
+    display: flex;
+   
+    align-items: center;
+}
+
+#inputs > input,
+#inputs> button{
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+#outputs{
+    width: 100%;
+    padding: 1rem 0.5rem;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    border: 1px solid grey
+}
+
+#outputs .numbersOtherThan55,
+#outputs .numbers{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+    position:relative;
+}
+
+span.number{
+    margin: 0px 3px;
+    font-size: 20px;
+}
+
+span.otherThan55{
+    font-size: 20px;
+    padding: 0 4px;
+    border: 1px solid red;
+}
+
+#outputs .numbers::before{
+    content: 'Random integers';
+    width: 100%;
+    margin-bottom: 5px;
+    color: grey
+}
+
+#outputs .numbersOtherThan55::before{
+    content: 'Random integers other than 55';
+    width: 100%;
+    margin-bottom: 5px;
+    color: grey
+}
+
+
